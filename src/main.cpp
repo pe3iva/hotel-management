@@ -15,12 +15,15 @@ int main(){
     std::cout << "Re-type your password: ";
     std::cin >> retypePassword;
 
-    if (password == retypePassword){
-        std::cout << "Password successfully updated.";
-    } else{
-        std::cout << "Re-typed password is incorrect, try again.";
+    while(retypePassword != password){
+
+        if(retypePassword == password){
+            std::cout << "Password Successfully updated.\n\n";
+        }
+
+        std::cout << "Password is incorrect, try again.\n\n";
+        std::cout << "Enter your password again: ";
+        std::cin >> retypePassword;
     }
-    
-    // std::cout << "Welcome, " << username << ".";
 
 }
