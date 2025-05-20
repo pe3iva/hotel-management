@@ -1,4 +1,5 @@
 #include <iostream>
+#include <functions.h>
 
 int main(){
 
@@ -25,5 +26,17 @@ int main(){
         std::cout << "Enter your password again: ";
         std::cin >> retypePassword;
     }
+
+    std::cout << "MAIN MENU\n\n";
+    std::cout << "Welcome, " << username << ".\n\n";
+    std::cout << "What are you going to do?";
+
+    std::cout << "1. Guest information\n";
+    std::cout << "2. Guest requests\n";
+    std::cout << "3. Guest approval\n";
+
+    int userDestination { };
+
+    goTo(userDestination);
 
 }
