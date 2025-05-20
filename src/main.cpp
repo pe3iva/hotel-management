@@ -1,5 +1,5 @@
 #include <iostream>
-#include <functions.h>
+#include "declareFunction.h"
 
 int main(){
 
