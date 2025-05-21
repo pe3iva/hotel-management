@@ -1,6 +1,8 @@
 #include <iostream>
 #include "declareFunction.h"
 
+int goTo(int destination);
+
 int main(){
 
     // user info
