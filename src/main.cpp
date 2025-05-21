@@ -15,7 +15,7 @@ int main(){
     std::cin >> username;
     std::cout << "\nEnter your password: ";
     std::cin >> password;
-    std::cout << "Re-type your password: ";
+    std::cout << "\nRe-type your password: ";
     std::cin >> retypePassword;
 
     while(retypePassword != password){
@@ -31,13 +31,14 @@ int main(){
 
     std::cout << "MAIN MENU\n\n";
     std::cout << "Welcome, " << username << ".\n\n";
-    std::cout << "What are you going to do?";
+    std::cout << "What are you going to do?\n\n";
 
     std::cout << "1. Guest information\n";
     std::cout << "2. Guest requests\n";
     std::cout << "3. Guest approval\n";
 
     int userDestination { };
+    std::cin >> userDestination;
 
     goTo(userDestination);
 
